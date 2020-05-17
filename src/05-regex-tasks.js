@@ -32,7 +32,8 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return /{[\w\d]{8}-[\w\d]{4}-[\w\d]{4}-[\w\d]{4}-[a-fA-F\d]{12}}/;
+  // throw new Error('Not implemented');
 }
 
 

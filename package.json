@@ -4,7 +4,16 @@
   "description": "Core JS 101",
   "scripts": {
     "test": "npm run lint && mocha",
-    "lint": "node node_modules/eslint/bin/eslint.js ./src"
+    "lint": "node node_modules/eslint/bin/eslint.js ./src",
+    "strings": "mocha test/01-strings-tests.js",
+    "numbers": "mocha test/02-numbers-tests.js",
+    "arrays": "mocha test/03-arrays-tests.js",
+    "date": "mocha test/04-date-tests.js",
+    "regex": "mocha test/05-regex-tests.js",
+    "objects": "mocha test/06-objects-tests.js",
+    "promises": "mocha test/07-promises-tests.js",
+    "conditions-n-loops": "mocha test/08-conditions-n-loops-tests.js",
+    "functions-n-closures": "mocha test/09-functions-n-closures-tests.js"
   },
   "author": "aorgish, mikhama",
   "license": "MIT",
@@ -13,6 +22,9 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "mocha": "^6.2.2"
+  },
+  "rules": {
+    "no-restricted-globals": ["error", "event", "fdescribe"]
   },
   "repository": {
     "type": "git",
